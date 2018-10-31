@@ -1,0 +1,49 @@
+   #wrap .app{
+            border: 1px solid #f6f6f6;
+            border-radius: 4px;
+      }
+      #wrap .app p{
+            height: 30px;
+            line-height: 30px;
+      }
+      #wrap .app p{
+            font-size: 15px;
+      }
+      #wrap .app dl{
+            margin: 10px 30px;
+            border: 1px solid #dcdcdc;
+            height: auto;
+            overflow: hidden;
+      }
+      #wrap .app dl dt{
+            display:  block;
+            height: 36px;
+            line-height: 36px;
+            background: #BEE8F1;
+            text-indent: 10px;
+      }
+      #wrap .app dl dt{
+            font-size: 10px;
+      }
+      #wrap .app dl dd {
+            padding: 10px;
+            float: left;
+      }
+      #last .add_role{
+                  display: inline-block;
+                  width: 100px;
+                  height: 20px;
+                  line-height: 20px;
+                  text-align: center;
+                  border: 1px solid blue;
+                  border-radius: 4px;
+                  margin-left: 20px;
+                  cursor: pointer;
+     }
+     .add_new_module {
+            height:28px;
+            line-height:28px;
+            float:right;
+            margin-right:50px;
+            font-size:13px;
+     }

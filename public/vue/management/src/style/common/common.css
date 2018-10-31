@@ -1,0 +1,124 @@
+/* 公共页样式 */
+body{
+    background: #ebebeb url('../../images//main/index_bg.png') no-repeat center top;
+}
+.main{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* top nav start */
+#nav{
+    color: #fff;
+    min-width: 1280px;
+}
+#nav .nav-center a{
+    color: #fff;
+}
+#nav .nav-center .top-status{
+    height: 30px;
+    line-height: 30px;
+    float: right;
+}
+#nav .nav-center .top-status span{
+    margin-left: 8px;
+    font-size: 1rem;
+}
+#nav .nav-center{
+    height: 30px;
+    line-height: 30px;
+    padding: 20px 0;
+    background: rgba(26,26,54,.5);
+}
+#nav .nav-center .nav-location{
+    position: relative;
+    padding-left: 26px;
+    top: -12px;
+}
+#nav .nav-center .nav-location a,#nav .nav-center .nav-location a img{
+    display: block;
+}
+/* top nav end */
+
+.whiteboard{
+    height: 100px;
+    width: 100%;
+}
+
+/* cursorlist top-nav start */
+
+#management-center .top-nav {
+    width: 940px;
+    height: 180px;
+    background: rgba(26, 26, 54, .5)
+}
+
+#management-center .top-nav .cont {
+    margin-right: 310px;
+    margin-top: 40px;
+    color: #fff;
+}
+
+#management-center .top-nav .cont .cont-big {
+    font-size: 2.5rem;
+}
+
+#management-center .top-nav span {
+    padding: 0px 5px;
+}
+
+#management-center .top-nav .cont .study {
+    margin-top: 35px;
+    display: inline-block;
+    margin: 40px 40px 0px 0px;
+}
+
+#management-center .top-nav .cont .course-data {
+    height: 70px;
+    text-align: left;
+    min-width: 600px;
+}
+
+
+/* cursorlist top-nav end */
+
+/* 中间内容区域头部样式 start */
+.classify{
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #32b16c;
+}
+.classify ul li{
+    position: relative;
+    float: left;
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    margin: 0 30px 0 0;
+    cursor: pointer;
+}
+.classify ul li:nth-child(1) .before{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 0;
+    z-index: 99;
+    border-bottom: 50px solid #32B16C;
+    border-right: 30px solid transparent;
+}
+.classify ul li a{
+    position: relative;
+    z-index: 100;
+    padding: 0 20px;
+}
+.classify ul li a.click{
+    color: #fff;
+}
+.classify .term{
+    height: 30px;
+    line-height: 30px;
+    float: right;
+    margin-top: 10px;
+}
+/* 中间内容区域头部样式 end */
+

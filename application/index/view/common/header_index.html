@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,maximum-scale=1.5,initial-scale=1">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>{$seo}{:config('site_name')}</title>
+    <link rel="icon" type="image/x-icon" href="">
+    <link rel="stylesheet" type="text/css" href="__STATIC__/index/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="__STATIC__/index/css/index.css" />
+    <script>
+        var API_ENV = {
+            API_URL: '{:Url("index/Api/index")}',
+            API_ProjectRoot: (window.document.location.origin + (window.document.location.pathname.substring(0, window.document.location.pathname.indexOf('index.php'))) + 'index.php/'),
+            API_STATIC: window.document.location.origin + (window.document.location.pathname.substring(0, window.document.location.pathname.indexOf('index.php'))),
+            API_FILES: 'files[]',// 文件字段
+        };
+    </script>
+    <script src="__STATIC__/index/js/jquery-3.2.1.min.js"></script>
+    <script src="__STATIC__/index/js/formValidator-4.0.1.js"></script>
+    <script src="__STATIC__/index/js/formValidatorRegex.js"></script>
+    <!-- <script src="__STATIC__/index/js/datatables.min.js"></script> -->
+    <script src="__STATIC__/index/js/jquery.cookie.js"></script>
+    <script src="__STATIC__/index/js/jquery.form.js"></script>
+    <script src="__STATIC__/index/js/jquery-ui.js"></script>
+    <script src="__STATIC__/index/js/spark-md5.min.js"></script>
+    <script src="__STATIC__/index/js/myfileupload.js"></script>
+    <script src="__STATIC__/index/js/utiltool.js"></script>
+    <script src="__STATIC__/index/js/data.js"></script>
+</head>
+<body>

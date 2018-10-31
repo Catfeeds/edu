@@ -1,0 +1,105 @@
+/* 首页main单独样式 */
+
+#index-content .content{
+    width: 940px;
+}
+#index-content .content.operation{
+    width: 900px;
+}
+#index-content .content .class-wrap{
+    padding: 35px 28px 0 28px;
+    background: #fff;
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    min-height: 800px;
+}
+.content .class-wrap .content-list{
+    padding: 4px 0;
+    min-height: 620px;
+}
+.content-list .item{
+    position: relative;
+    height: 280px;
+    width: 31.7%;
+    overflow: hidden;
+    float: left;
+    margin: 26px 21px 0 0;
+    box-sizing: border-box;
+}
+.content-list .item:hover{
+    box-shadow: 0 0 2px 2px rgba(125,125,124,.4);
+}
+.content-list .item .class-pic img{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.content-list .item .class-msg{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 99;
+    background: rgba(255,255,255,.35);
+    border: 1px solid #b2b2b2;
+    height: 80px;
+}
+.item .class-msg .class-title{
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 50px;
+}
+.item .class-msg .class-title,.item .class-msg .deal-msg{
+    margin-left: 30px;
+}
+.item .class-msg .deal-msg span{
+    margin: 0 20px 0 0 ;
+}
+.item .class-msg .deal-msg span:nth-child(1){
+    color: #fb0208;
+}
+.item .class-msg .deal-msg span:nth-child(2){
+    color: #064b04;
+}
+.item .class-msg .readin{
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 10px 0 0 0;
+}
+.item .class-msg .readin a{
+    display: block;
+}
+.item .class-msg .readin a:hover{
+    background: #32B16C;
+    color: #fff;
+}
+.content-list .item:nth-child(3n+3){
+    margin: 26px 0 0 0;
+}
+.add-course{
+    background: #dcdcdc;
+}
+.add-course .course-pic{
+    width: 110px;
+    height: 110px;
+    display: block;
+    margin: 0 auto;
+    transform: translateY(-50%);
+    margin-top: 50%;
+    border-radius: 50%;
+    background: #b5b5b5;
+    overflow: hidden;
+}
+.add-course .course-pic i{
+    width: 47px;
+    height: 47px;
+    display: block;
+    margin: 31px auto;
+    background: url('../images/main/icon.png') no-repeat;
+    background-position: -82px 0px;
+}

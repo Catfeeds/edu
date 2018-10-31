@@ -1,0 +1,172 @@
+/*库中心主页样式*/
+.library {
+    width: 1200px;
+    margin: 20px auto 35px;
+    min-width: 1200px;
+    min-height: 85vh;
+}
+.library .lib-r{
+    margin-left: 10px;
+    background: #ffffff;
+    min-height: 773px;
+    width: 940px;
+    box-sizing: border-box;
+    padding: 35px 28px 0;
+}
+/* 课程库列表样式 */
+.courselib-list a{
+    padding: 5px 0;
+    /*display: block;*/
+}
+.courselib-list .add-courselib{
+    width: 150px;
+    margin: 20px auto;
+    text-align: center;
+}
+.courselib-list .add-courselib a{
+    color: rgb(68, 68, 109, 0.4);
+}
+.courselib-list .add-courselib a:hover{
+    color: rgba(68, 68, 109, 0.6);
+}
+.courselib-list a:hover{
+    color: #51B98F;
+}
+.courselib-list ul li.clearfix{
+    position: relative;
+    height: 120px;
+    overflow: hidden;
+    margin: 5px auto;
+    box-shadow: 0 1px 2px gray;
+}
+.courselib-list ul li .msg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 110px;
+    padding: 5px 10px;
+    width: 100%;
+    overflow: hidden;
+    z-index: 100;
+}
+.courselib-list ul li .msg .wrap-port{
+    height: 80px;
+    overflow: hidden;
+}
+.courselib-list ul li .msg h2{
+    font-size: 26px;
+}
+.courselib-list ul li .msg h2 span{
+    font-size: 24px;
+    margin-left: 40px;
+    color: #44446d;
+}
+.courselib-list ul li .msg .option{
+    float: right;
+    font-size: 14px;
+    width: 500px;
+    text-align: center;
+    margin: 25px 25px 25px 0;
+    padding: 5px 10px;
+}
+.courselib-list ul li .msg .show{
+    padding: 19px 10px;
+}
+.courselib-list ul li .msg .detailes li {
+    border-right: 1px solid #ddd;
+    float: left;
+    margin: 19px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+.courselib-list ul li .msg .detailes li:last-child{
+    border: none;
+}
+
+/* 机构和课程类型样式 */
+#library .classify .course-type{
+    position: relative;
+    width: 550px;
+    height: 50px;
+    margin-left: 30px;
+}
+#library .classify .course-type .wrap{
+    position: relative;
+    overflow: hidden;
+    height: 50px;
+}
+#library .classify .course-type .btn span{
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 30px;
+    height: 50px;
+    background: url("../images/main/icon.png") no-repeat;
+    cursor: pointer;
+}
+#library .classify .course-type .btn span.left{
+    left: -30px;
+    background-position: -80px -127px;
+}
+#library .classify .course-type .btn span.right{
+    right: -30px;
+    background-position: -113px -127px;
+}
+#library .classify .course-type .btn span.left:hover{
+    left: -30px;
+    background-position: -80px -93px;
+}
+#library .classify .course-type .btn span.right:hover{
+    right: -30px;
+    background-position: -113px -93px;
+}
+#library .classify .course-type ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+}
+
+/* 课程类型样式 */
+#library .classify ul li:nth-child(1) .before{
+    border-right: 20px solid transparent;
+    border-left: 10px solid transparent;
+}
+
+
+/* 附件列表样式 */
+.file-list ul li{
+    position: relative;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    width: 150px;
+    background: rgba(125,125,125,.5);
+    margin: 0 10px 5px 0;
+    font-size: 12px;
+    overflow: hidden;
+}
+.file-list ul li span{
+    display: block;
+    padding: 0 10px;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    max-width: 86%;
+    overflow:hidden;
+}
+.file-list ul li i{
+    position: absolute;
+    top: 0;
+    right: -30px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    text-align: center;
+    background: rgba(25,25,25,0.2);
+    color: #fff;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+.file-list ul li:hover i{
+    right: 0;
+}

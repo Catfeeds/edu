@@ -1,0 +1,1260 @@
+﻿/* 课堂章节和作业列表信息 */
+
+#index-content #course {
+    padding-top: 0;
+}
+#index-content #course.operation{
+    background: #fff;
+    padding: 20px
+}
+#course .classify-wrap {
+    background: #fff;
+    min-height: 490px;
+    margin-top: 20px;
+    padding: 20px
+}
+#course.operation .classify-wrap{
+    margin-top: 0;
+    padding: 0px
+}
+#course .classify-wrap .classify {
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #32b16c;
+}
+#course .classify ul li {
+    position: relative;
+    float: left;
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    margin: 0 30px 0 0;
+}
+
+#course .classify button {
+    float: right;
+    background: #44446d;
+    color: #fff;
+    padding: 0px 30px;
+    border-radius: 8px;
+    border: none;
+    height: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+#course .classify button:hover {
+    background: #32b16a;
+}
+
+#course .classify ul .check .before {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 0;
+    z-index: 99;
+    border-bottom: 50px solid #32B16C;
+    border-right: 30px solid transparent;
+}
+
+#course .classify ul li a {
+    position: relative;
+    z-index: 100;
+    padding: 15px 20px;
+    font-size: 2.0rem;
+}
+
+.task-con .container .course-top {
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    margin: 5px 0;
+    margin-top: 20px;
+}
+
+.task-con .container .course-top ul {
+    margin: 10px 10px 10px 10px;
+}
+
+.task-con .container .course-top ul li {
+    float: left;
+    margin-right: 20px;
+}
+
+.task-con .container .course-top ul li.task-other1 {
+    position: relative;
+    margin-left: 20px;
+    color: green;
+}
+
+.task-con .container .course-top ul li.task-other2 {
+    position: relative;
+    margin-left: 20px;
+    color: red;
+}
+
+.task-con .container .course-top .task-btn {
+    position: relative;
+    float: right;
+    background: #44446d;
+    color: #fff;
+    padding: 0 15px;
+    border-radius: 8px;
+    height: 26px;
+    cursor: pointer;
+    margin-top: 7px;
+    margin-right: 20px;
+    line-height: 26px;
+    font-size: 1.4rem;
+}
+
+.task-con .container .course-top .task-btn:hover {
+    background: #32b16a;
+}
+
+.course-list {
+    margin-top: 18px;
+}
+/* 
+.mod-chapters .chapter {
+    cursor: pointer;
+    margin: 5px 0;
+} */
+
+.mod-chapters .chapter h3 .icon-c {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: url('../images/main/icon.png') no-repeat;
+    background-position: -78px -63px;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+}
+
+.mod-chapters .chapter h3 .icon-r {
+    position: relative;
+    top: 15px;
+    right: 10px;
+    width: 15px;
+    height: 18px;
+    float: right;
+    line-height: 30px;
+    display: block;
+    background: url('../images/main/icon1.png') no-repeat;
+    transform: rotateZ(0deg);
+    transition: transform .3s;
+}
+
+.task-con .mod-chapters .chapter h3 {
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    background: #43446C;
+    padding: 0 25px;
+    color: #fff;
+    margin-bottom: 7px;
+}
+
+.mod-chapters .chapter .chapter-list {
+    padding-left: 0;
+    width: 95%;
+    height: 0;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.task-con .mod-chapters .chapter .chapter-list {
+    height: auto;
+    width: 100%;
+}
+
+/* .mod-chapters .chapter strong.chapter-title {
+    position: relative;
+    margin: 0 50px;
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+
+.task-con .mod-chapters .chapter strong.chapter-title {
+    margin: 0 5px;
+    width: 100px;
+} */
+
+.mod-chapters .chapter strong.chapter-other1, .mod-chapters .chapter strong.other {
+    margin: 0 20px;
+}
+.mod-chapters .chapter strong.details{
+    margin: 0;
+}
+.task-con .mod-chapters .chapter strong:nth-child(2),.task-con .mod-chapters .chapter strong:nth-child(3){
+    margin: 0 5px;
+    width: 100px;
+}
+.mod-chapters .chapter .chapter-list li {
+    cursor: pointer;
+    height: 40px;
+    line-height: 40px;
+    background: rgb(215, 232, 238);
+    margin-bottom: 7px;
+    padding: 0 25px;
+    color: #000;
+    transition: all 0.2s;
+}
+.mod-chapters .chapter .chapter-list li span, .task-con .mod-chapters .chapter strong{
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.mod-chapters .chapter span.selitem {
+    margin: 0 5px;
+    transform: translateY(-12px);
+}
+.mod-chapters .chapter .chapter-list li span:nth-child(2),.mod-chapters .chapter .chapter-list li span:nth-child(3){
+    width: 100px;
+    margin: 0 5px;
+}
+.mod-chapters .chapter .chapter-list li span:nth-child(4), .task-con .mod-chapters .chapter strong:nth-child(4){
+    width: 150px;
+}
+.mod-chapters .chapter .chapter-list li:hover {
+    background: rgb(68, 68, 109);
+    color: #fff;
+}
+.mod-chapters .chapter .chapter-list li.hover {
+    background: rgb(68, 68, 109);
+    color: #fff;
+}
+.mod-chapters .chapter .chapter-list li .btn-operation:hover {
+    /* background: rgb(50, 177, 108); */
+    color: rgb(50, 177, 108);
+    border-radius: 6px;
+}
+
+.mod-chapters .chapter .chapter-list li .btn-operation, .task-con .mod-chapters .chapter strong.details{
+    /* margin: 0 50px; */
+    /* padding: 0 12px; */
+    float: right;
+}
+
+.mod-chapters .chapter .chapter-list input[type=checkbox] {
+    background: #fff;
+    margin-left: -20px;
+}
+
+.mod-chapters .chapter .chapter-list .all-btn {
+    background-color: #fff;
+    margin-left: -20px;
+}
+
+/* .mod-chapters .chapter .chapter-list span {
+    padding: 2px 15px;
+    font-size: 1.6rem;
+}
+
+.mod-chapters .chapter .chapter-list span label {
+    margin-left: 20px;
+} */
+
+.mod-chapters .chapter .chapter-list span.task-other{
+    margin: 0 20px;
+}
+
+/* #table-btn-list .select {
+    margin-right: 20px;
+} */
+
+/* #table-btn-list .select span {
+    float: left;
+} */
+
+.mod-chapters .chapter .chapter-list button.del-btn {
+    margin-left: 10px;
+    background: #44446d;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 3px 12px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.mod-chapters .chapter .chapter-list button.del-btn:hover {
+    background: #32b16a;
+}
+
+
+/* 课程库样式 start */
+
+.course-paging .lib {
+    float: left;
+}
+
+.course-paging .lib>a {
+    padding: 6px 20px;
+    border-radius: 8px;
+    border: 1px solid #32b16c;
+}
+
+
+/* 按钮列表样式 */
+
+.dt-buttons {
+    float: left;
+    border-radius: 2px;
+    overflow: hidden;
+    height: 38px;
+    line-height: 38px;
+    box-shadow: inset 0 0 2px rgba(125, 125, 125, .5);
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    -webkit-user-select: none;
+}
+
+.dt-buttons .dt-button {
+    padding: 0 12px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dt-buttons .dt-button:hover {
+    background: #32B16C;
+    color: #ffffff;
+}
+
+#table-btn-list .select span {
+    float: left;
+}
+
+.item-wrap .select-item.active,
+.dt-buttons .dt-button.active {
+    background: #32B16C;
+    color: #ffffff;
+}
+
+.show-table {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.show-table .filtrate-bar {
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.show-table .filtrate-bar .filter-btn {
+    position: relative;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+}
+
+.show-table .filtrate-bar .filter-btn i.mark {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    display: block;
+    z-index: 99;
+    background: #ffffff;
+}
+
+.show-table .filtrate-bar .filter-btn.active {
+    border-color: green;
+}
+
+
+/* 表格全局样式 */
+
+.show-table .table-con {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    box-sizing: border-box;
+    height: 500px;
+}
+
+.show-table .table-con #data-table {
+    text-align: center;
+    width: 100%;
+}
+
+td.highlight {
+    background: whitesmoke;
+}
+
+
+/* 表格四周信息样式 */
+
+#data-table_length,
+#data-table_paginate,
+#data-table_filter {
+    float: right;
+    margin-left: 20px;
+}
+
+#data-table_info {
+    float: left;
+}
+
+#data-table_info .select-info {
+    margin-left: 20px;
+    font-size: 8px;
+}
+
+#data-table_length select {
+    margin: 0 10px;
+    line-height: 24px;
+    height: 24px;
+    outline: none;
+}
+
+#data-table_length select:focus {
+    border-color: #32B16C;
+}
+
+#data-table_filter input {
+    margin-left: 10px;
+    outline: none;
+    border: 1px solid #666;
+    text-indent: 4px;
+    font-size: 12px;
+    height: 24px;
+    line-height: 24px;
+}
+
+#data-table_filter input:focus {
+    border-color: #32B16C;
+}
+
+#data-table {
+    margin: 10px 0;
+}
+
+#table-btn-list .btnarr {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    box-sizing: border-box;
+    display: inline-block;
+    min-width: 1.5em;
+    margin-left: 5px;
+    text-align: center;
+    cursor: pointer;
+    color: #333;
+    padding: 0 10px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover,
+.dataTables_wrapper .dataTables_paginate .paginate_button:active,
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background: #32B16C;
+    border: none;
+    color: #fff;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled,
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover,
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
+    cursor: default;
+    background: transparent;
+    color: #666;
+    outline: none;
+}
+
+table.dataTable tbody td.select-checkbox,
+table.dataTable tbody th.select-checkbox {
+    position: relative;
+}
+
+table.dataTable tbody td.select-checkbox:before,
+table.dataTable tbody th.select-checkbox:before {
+    content: ' ';
+    margin-top: -6px;
+    margin-left: -6px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+table.dataTable tbody td.select-checkbox:before,
+table.dataTable tbody td.select-checkbox:after,
+table.dataTable tbody th.select-checkbox:before,
+table.dataTable tbody th.select-checkbox:after {
+    display: block;
+    position: absolute;
+    top: 1.2em;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    box-sizing: border-box;
+}
+
+table.dataTable tbody td.select-checkbox:before,
+table.dataTable tbody td.select-checkbox:after,
+table.dataTable tbody th.select-checkbox:before,
+table.dataTable tbody th.select-checkbox:after {
+    display: block;
+    position: absolute;
+    top: 1.2em;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    box-sizing: border-box;
+}
+
+table.dataTable tbody th,
+table.dataTable tbody td {
+    padding: 0 10px;
+}
+
+table.dataTable tr.selected td.select-checkbox:after,
+table.dataTable tr.selected th.select-checkbox:after {
+    content: '\2714';
+    margin-top: -20px;
+    margin-left: -5px;
+    text-align: center;
+    text-shadow: 1px 1px #B0BED9, -1px -1px #B0BED9, 1px -1px #B0BED9, -1px 1px #B0BED9;
+    color: #32b16c;
+}
+
+.show-table .operation,
+.detalis-form .select {
+    padding: 15px 0;
+}
+
+.show-table .operation .table-btn-list,
+.show-table .operation .layui-form {
+    float: left;
+}
+
+.show-table .layui-form-item {
+    margin-bottom: 0;
+}
+
+
+/* 详情内容查看 */
+
+.show-track {
+    width: 100%;
+    /* margin-left: -100%; */
+}
+
+.table-list {
+    width: 100%;
+    float: left;
+}
+
+.show-track .table-list,
+.detalis-form {
+    width: 100%;
+    float: left;
+}
+
+.detalis-form {
+    min-height: 500px;
+    /* background: gray; */
+    box-sizing: border-box;
+}
+
+
+/* 查看用户详细信息样式 start */
+
+.detalis-form .show-form {
+    width: 80%;
+    margin: 20px 10% 0;
+}
+
+.subfield {
+    width: 100%;
+    border-bottom: 1px solid gray;
+}
+
+.subfield h3 {
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.field-item {
+    min-height: 50px;
+    margin-bottom: 10px;
+}
+
+.field-item .field-key,
+.field-item .field-con {
+    float: left;
+}
+
+.field-item .field-key {
+    margin-right: 40px;
+    text-align: right;
+    width: 20%;
+    font-size: 18px;
+}
+
+.field-item .field-con {
+    width: 70%;
+    text-align: left;
+}
+
+.field-item .field-con p {
+    margin-bottom: 10px;
+}
+
+.detalis-form .user-submit {
+    margin: 50px 0 0 500px;
+}
+
+.detalis-form .user-submit span {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 8px;
+    background: #44446d;
+    color: #fff;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.detalis-form .user-submit span:hover {
+    background: #32b16a;
+}
+
+
+/* 查看用户详细信息样式 end */
+
+
+/* 添加成员 start */
+
+.search-students {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.search-students .p {
+    height: 36px;
+    line-height: 36px;
+    margin: 20px 0;
+}
+
+/* .search-students .p .input {
+    width: 300px;
+    height: 30px;
+    line-height: 36px;
+    border: 1px solid rgba(125, 124, 125, .5);
+    transition: all 0.3s;
+    float: left;
+    margin-right: 20px;
+    transform: translateY(1px);
+    text-indent: 10px;
+} */
+.search-students .p .btn-arr{
+    margin-top: 0;
+}
+.search-students .p .input:focus {
+    border-color: #32B16C;
+}
+
+.search-students .btn {
+    padding: 0 20px;
+    float: left;
+    background: #44446d;
+    color: #fff;
+    margin-right: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.search-students .btn:hover {
+    background: #32B16C;
+}
+
+.search-students .res-list {
+    width: 100%;
+    margin: 0 auto;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.search-students .res-list tr {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid gray;
+    text-align: center;
+    font-size: 0.8rem;
+}
+.search-students .res-list tr td{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 15px;
+}
+.search-students .res-list thead {
+    background: #44446d;
+    color: #fff;
+    font-size: 14px;
+}
+.search-students .wrap{
+    min-height: 490px;
+    max-height: 490px;
+    overflow-y: auto;
+    width: 100%;
+    border-bottom: 1px solid rgba(123, 123, 123, .3);
+}
+.search-students .thead{
+    background: #44446d;
+    color: #fff;
+    font-size: 1.4rem;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid gray;
+    text-align: center;
+}
+.search-students .thead span{
+    float: left;
+}
+.type-search{
+    position: relative;
+    width: 300px;
+    height: 36px;
+    /* top: 7px; */
+    border: 1px solid #c0d9fe;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    /* margin-right: 10px; */
+    /*overflow: hidden;*/
+}
+.type-search .input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    float: left;
+    width: 240px;
+    height: 100%;
+}
+.type-search .search-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 36px;
+    text-align: center;
+    width: 60px;
+    cursor: pointer;
+}
+.type-search .search-btn:hover{
+    color: #32b16c;
+}
+.type-search .input input{
+    outline: none;
+    height: 36px;
+    text-indent: 10px;
+    display: block;
+    border: none;
+}
+.type-search .input .sel-type .layui-form-item .layui-input-inline{
+    width: 70px;
+}
+.type-search .input .sel-type .layui-form-select .layui-input {
+    padding-right: 25px;
+}
+.type-search .input .sel-type .layui-form-select dl{
+    top: 36px;
+}
+.type-search .input .sel-type .layui-input{
+    padding-left: 0;
+}
+.type-search .input .sel-type{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 36px;
+    line-height: 36px;
+}
+/* 添加成员 end*/
+
+
+/* 章节设计单独样式 */
+
+
+/* 添加章节 start*/
+
+#add-layerlib .wrap-item {
+    position: relative;
+}
+
+.mod-chapters .add-chapter {
+    cursor: pointer;
+    margin: 5px 0
+}
+
+.mod-chapters .add-chapter h3 {
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 10px;
+}
+
+.mod-chapters .add-chapter #add-chapterlib {
+    position: relative;
+    margin: 0px 365px;
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+
+.mod-chapters .add-chapter :hover {
+    color: #32b16a;
+}
+
+.mod-chapters .chapter strong.addchapter {
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+
+.add-course1 .add-form1 p {
+    height: 40px;
+    line-height: 40px;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+.add-course1 .add-form1 .con {
+    border-radius: 8px;
+    margin-left: 10px;
+    font-size: 1.0rem;
+    border: 1px solid gray;
+    height: 27px;
+    width: 30%;
+    padding: 0px 10px;
+}
+
+.add-course1 .add-course-form .submit {
+    font-size: 1.4rem;
+    margin: 30px 0;
+    padding: 0 100px;
+}
+
+.add-course1 .add-course-form .fr {
+    float: right;
+}
+
+.add-course1 .add-course-form .submit span {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 8px;
+    background: #44446d;
+    color: #fff;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.add-course1lib .add-form1 p {
+    /*height: 40px;
+    line-height: 40px;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 20px;
+*/
+    height: 40px;
+    line-height: 40px;
+    margin: 30px 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+.add-course1lib .add-form1 .con {
+    border-radius: 8px;
+    margin-left: 10px;
+    font-size: 1.0rem;
+    border: 1px solid gray;
+    height: 27px;
+    width: 30%;
+    padding: 0px 10px;
+}
+
+.add-course1lib .add-course-form .submit {
+    font-size: 1.4rem;
+    margin: 30px 0;
+    padding: 0 100px;
+}
+
+.add-course1lib .add-course-form .fr {
+    float: right;
+}
+
+.add-course1lib .add-course-form .submit span {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 8px;
+    background: #44446d;
+    color: #fff;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.remove {
+    position: absolute;
+    top: 90%;
+    /* right: 8%; */
+    font-family: '\5B8B\4F53';
+    font-style: normal;
+    right: 115px;
+    cursor: pointer
+}
+
+
+/* 添加章节 end*/
+
+
+/* 继续添加章节 start */
+
+.add-course1 .add-form1 #add1 {
+    opacity: 1;
+}
+.add-course1 {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.add-course1 .add-form1 #add2 {
+    margin-top: -160px;
+}
+
+.add-course1 .add-form1 .continue-add {
+    color: #4898d5;
+    cursor: pointer
+}
+
+.add-course1 .add-form1 .continue-add .con-add:hover {
+    color: gray;
+}
+
+
+/* 继续添加章节 end */
+
+
+/* 添加小节 */
+
+.mod-chapters .chapter .chapter-lists li .btn-operation .btn-addlib {
+    font-size: 1.2rem;
+    /* padding: 0px 400px; */
+    margin-right: 400px
+}
+
+.removelib {
+    position: absolute;
+    top: 73%;
+    /* right: 8%; */
+    font-family: '\5B8B\4F53';
+    font-style: normal;
+    right: 115px;
+    cursor: pointer;
+}
+
+
+/* 确认提交 */
+
+.mod-chapters .chapter .chapter-lists li .btn-operation .sortup {
+    font-size: 1.2rem;
+    /* padding: 0px 400px; */
+    margin-right: 400px
+}
+
+
+/* 继续添加小节 start */
+.add-course1lib {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.add-course1lib .add-form1 .continue-addlib {
+    color: #4898d5;
+    cursor: pointer
+}
+
+.add-course1lib .add-form1 .continue-addlib .con-addlib:hover {
+    color: gray;
+}
+
+.add-course1lib .add-form1 #libadd1 {
+    opacity: 1;
+}
+
+.add-course1lib .add-form1 #libadd2 {
+    margin-top: -120px;
+}
+
+
+/* 继续添加小节 end */
+
+
+/* 编辑删除等 */
+
+.mod-chapters .chapter h3 p span {
+    transition: all .1s;
+    margin: 0 0 0 10px;
+    cursor: pointer;
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.mod-chapters .chapter h3 p span a {
+    padding: 4px 16px;
+    color: #fff;
+    background-color: rgb(68, 68, 109);
+    border-radius: 8px;
+}
+
+.mod-chapters .chapter h3 p span a:hover {
+    background: #32b16a;
+}
+
+
+/* 温馨提示  */
+
+.ico-msg .close-msg {
+    line-height: 40px;
+    margin: 0px 0;
+    text-align: center;
+    font-size: 15px;
+    margin: 10px auto;
+    overflow: hidden;
+    display: none;
+    padding: 20px 55px 20px 55px;
+}
+
+.delete-chapter .chaptermess {
+    line-height: 25px;
+    margin: 0px 0;
+    text-align: center;
+    font-size: 13px;
+    margin: 0px auto;
+    overflow: hidden;
+    display: none;
+    padding: 35px 55px 20px 55px
+}
+
+.delete-chapterlib .chapterlibmess {
+    line-height: 25px;
+    margin: 0px 0;
+    text-align: center;
+    font-size: 13px;
+    margin: 0px auto;
+    overflow: hidden;
+    display: none;
+    padding: 35px 55px 20px 55px
+}
+
+
+/* 新分页 */
+
+.chapterpage a {
+    text-decoration: none;
+    color: #000;
+}
+
+.chapterpage a:hover {
+    color: #fff;
+}
+
+.chapterpage ul {
+    position: relative;
+    margin-left: 335px;
+    clear: both;
+    height: 40px;
+    user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.chapterpage li {
+    height: 40px;
+    margin: 0 5px;
+    float: left;
+    list-style-type: none;
+    padding: 0 20px;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.chapterpage li.prev {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.chapterpage li:nth-child(2) {
+    margin-left: 100px;
+}
+
+.chapterpage li:hover,
+.chapterpage li.hover {
+    background: #32b16a;
+}
+
+.chapterpage li:hover a,
+.chapterpage li.hover a {
+    color: #fff;
+}
+
+
+/* 小节快速编辑 */
+
+.chapter li .revamp {
+    /*width: 100%;*/
+    height: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    background: rgb(215, 232, 238);
+}
+
+.chapter li .revamp ul {
+    border-top: 1px solid gray;
+    width: 100%;
+}
+
+.chapter li .revamp li {
+    float: left;
+    width: 30%;
+    list-style-type: none;
+    padding: 0 10px;
+    background: transparent;
+}
+
+.chapter li .revamp li h4,
+.chapter li .revamp li h5 {
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.chapter li .revamp p {
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.chapter li .revamp p span {
+    margin-right: 20px;
+}
+
+.chapter li .revamp p input {
+    border: 1px solid gray;
+    outline: none;
+    height: 28px;
+    text-indent: 10px;
+    width: 200px;
+}
+
+.chapter li .revamp p.summary textarea {
+    min-width: 200px;
+    max-width: 270px;
+    min-height: 71px;
+    max-height: 71px;
+    text-indent: 10px;
+    outline: none;
+    border: 1px solid gray;
+}
+
+.chapter li .revamp .operation .deal {
+    margin-top: 40px;
+}
+
+.chapter li .revamp li.operation p span {
+    padding: 4px 12px;
+    border-radius: 6px;
+    background: #44446d;
+    color: #fff;
+    cursor: pointer;
+}
+
+.mod-chapters .chapter .sortable li {
+    list-style-type: none;
+    line-height: 40px;
+    margin-bottom: 7px;
+    background: rgb(215, 232, 238);
+}
+
+.mod-chapters .chapter .chapter-lists .knobble-title {
+    height: 40px;
+    padding: 0 20px;
+    transition: all .1s;
+}
+
+.mod-chapters .chapter .chapter-lists .knobble-title:hover {
+    background: rgb(68, 68, 109);
+    color: #fff;
+}
+
+.mod-chapters .chapter .sortable .other {
+    text-align: center;
+    cursor: pointer;
+}
+
+.mod-chapters .chapter .chapter-lists {
+    padding-left: 0;
+    width: 95%;
+    height: 0;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+
+/* 重复修改的样式 */
+
+.mod-chapters .chapter .chapter-lists li .btn-operation span:hover {
+    background: rgb(50, 177, 108);
+    color: #fff;
+    border-radius: 6px;
+}
+
+.mod-chapters .chapter .chapter-lists li .btn-operation span {
+    font-size: 1.2rem;
+    padding: 3px 12px;
+}
+
+.mod-chapters .chapter .chapter-lists input[type=checkbox] {
+    background: #fff;
+    margin-left: -20px;
+}
+
+.mod-chapters .chapter .chapter-lists span {
+    padding: 2px 15px;
+    font-size: 1.6rem;
+}
+
+/* 章节样式重写2 */
+#index-content .course-lib {
+    margin-left: 10px;
+    background: #ffffff;
+    min-height: 673px;
+    width: 940px;
+    box-sizing: border-box;
+    float: right;
+    padding: 35px 28px 0;
+}
+
+.mod-chapters .chapter strong.chapter-titles {
+    float: left;
+    width: 60%;
+    margin-left: 50px;
+    font-weight: normal;
+    font-size: 1.8rem;
+}

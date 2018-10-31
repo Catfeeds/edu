@@ -1,0 +1,33 @@
+{layout name="common/layout_main" /}
+<section id="library" class="library library-center clearfix">
+    <aside class="side-nav fl">
+        <div class="user-msg">
+            <img src="__STATIC__/index/images/main/avatar.png" alt="" class="avatar" />
+            <p class="name">LUCY教师</p>
+            <a href="" class="account-control">[&nbsp;账号管理&nbsp;]</a>
+        </div>
+        <div class="user-fn">
+            <p class="fn-title">常用功能栏</p>
+            <ul class="fn-list">
+                <li class="hover"><a href="{:Url('/Index/Main/library')}"><i class="icon"></i>课程库</a></li>
+                <li><a target="_blank" href="__MODULE__/libmgt/index.html#/library/user/2_2"><i class="icon"></i>用户中心</a></li>
+                <li><a target="_blank" href="__MODULE__/libmgt/index.html#/library/pro/2_3"><i class="icon"></i>专业管理</a></li>
+                <li><a target="_blank" href="__MODULE__/libmgt/index.html#/library/classmgt/2_4"><i class="icon"></i>班级管理</a></li>
+                <li><a target="_blank" href="__MODULE__/libmgt/index.html#/library/org/2_5"><i class="icon"></i>机构中心</a></li>
+                <li class="line"></li>
+                <li><a href="javascript:void(0);"><i class="icon"></i>作业库</a></li>
+                <li><a href="javascript:void(0);"><i class="icon"></i>其他库</a></li>
+            </ul>
+        </div>
+    </aside>
+    <section class="lib-r fl">
+        <keep-alive>
+            <router-view></router-view>
+        </keep-alive>
+    </section>
+</section>
+<!-- 库中心一个新的vue实例 -->
+<link rel="stylesheet" href="__STATIC__/index/js/librarycourse/style/vendors.css">
+<script src="__STATIC__/index/js/librarycourse/js/library-app.vendors.min.js"></script>
+<script src="__STATIC__/index/js/librarycourse/js/library-app.index.min.js"></script>
+<!--侧边栏导航 start-->

@@ -1,0 +1,41 @@
+{layout name="common/layout_main" /}
+<div class="whiteboard"></div>
+<section id="index-content" class="main clearfix">
+    <div id="app">
+        <!--侧边栏导航 start-->
+        <aside class="side-nav fl">
+            <div class="user-msg">
+                <img src="__STATIC__/index/images/main/avatar.png" alt="" class="avatar" />
+                <p class="name">LUCY教师</p>
+                <a href="" class="account-control">[&nbsp;账号管理&nbsp;]</a>
+            </div>
+            <div class="user-fn">
+                <p class="fn-title">常用功能栏</p>
+                <ul class="fn-list">
+                    <!-- <li class="hover"><a href="{:Url('/Index/Main/index')}"><i class="icon"></i>课堂</a></li> -->
+                    <li class="hover"><a href="__MODULE__/croom/index.html#/"><i class="icon"></i>课堂</a></li>
+                    <li><a href="javascript:void(0);"><i class="icon"></i>专题创作</a></li>
+                    <li><a href="javascript:void(0);"><i class="icon"></i>通知</a></li>
+                    <li class="line"></li>
+                    <li><a href="javascript:void(0);"><i class="icon"></i>小组</a></li>
+                    <li><a href="javascript:void(0);"><i class="icon"></i>笔记</a></li>
+                    <li class="line"></li>
+                    <li><a href="javascript:void(0);"><i class="icon"></i>书房</a></li>
+                    <li class="line"></li>
+                    <li v-if="checked('INDEX/MAIN/ADMIN')"><a target="_blank" href="{:Url('/Admin/rbac/index')}"><i class="icon"></i>权限管理</a></li>
+                    <li v-if="checked('INDEX/MAIN/SYSTEMADMIN')"><a target="_blank" href="{:Url('/Index/Main/library')}"><i class="icon"></i>系统管理</a></li>
+                </ul>
+            </div>
+        </aside>
+        <!--侧边栏导航 end-->
+        <section class="fr">
+            <keep-alive>
+                <router-view :key="key"></router-view>
+            </keep-alive>
+        </section>
+    </div>
+</section>
+
+<!-- <link rel="stylesheet" href="__STATIC__/index/js/course/style/vendors.css">
+<script src="__STATIC__/index/js/course/js/course-app.vendors.js"></script>
+<script src="__STATIC__/index/js/course/js/course-app.index.js"></script> -->

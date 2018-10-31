@@ -1,0 +1,17 @@
+@mixin underline {
+  text-decoration: underline;
+  color: red;
+}
+
+// 设置垂直居中
+@mixin middelH ($val) {
+  height: $val;
+  line-height: $val;
+}
+
+// 设置小标题
+@mixin setTitle {
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding-left: 10px;
+}

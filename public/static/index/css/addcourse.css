@@ -1,0 +1,513 @@
+/* 添加作业表单 */
+.filed-item  div.tasksummary, .filed-item  div.subtask{
+    margin-left: 110px;
+    width: 80%;
+}
+.filed-item .sub{
+    margin-right: 20px;
+    cursor: pointer;
+    font-size: 1.8rem;
+    color: #666;
+}
+.filed-item .sub:hover{
+    color: #000;
+}
+.add-course-form{
+    margin-top: 10px;
+}
+.add-course-form .select span{
+    float: left;
+}
+.add-course-form .filed-item{
+    /* float: left; */
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.add-course-form .item-title{
+    float: left;
+    display: block;
+    padding: 9px 15px;
+    width: 80px;
+    font-weight: 400;
+    text-align: right;
+}
+.filed-item .sel{
+    float: left;
+    margin-right: 20px;
+    margin-left: 0;
+}
+.filed-item .sel.goon{
+    height: 38px;
+    line-height: 38px;
+    color: #666;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+.filed-item .sel.goon:hover{
+    color: #000;
+}
+.filed-item select, .filed-item select option{
+    padding: 0 20px 0 10px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    display: block;
+}
+.filed-item input{
+    padding: 0 0 0 10px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    display: block;
+}
+.filed-item input#tasktitle{
+    width: 400px;
+}
+.filed-item textarea{
+    padding-left: 10px;
+    width: 98%;
+    min-width: 98%;
+    max-width: 98%;
+    height: 150px;
+    min-height: 150px;
+}
+.editor{
+    width: 80%;
+    /* margin-bottom: 100px; */
+    overflow: hidden;
+}
+.editor-bar{
+    border: 1px solid #ccc;
+}
+.editor-con{
+    border: 1px solid #ccc;
+    height: 200px;
+}
+.editor-file{
+    /* padding-left: 10px; */
+}
+.editor-file .file-btn{
+    width: 100px;
+    float: left;
+    height: 40px;
+    position: relative;
+    margin-top: 5px;
+    border: none;
+    margin: 0;
+}
+.editor-file input{
+    position: absolute;
+    left: 0;
+    z-index: 99;
+    opacity: 0.009;
+    width: 100px;
+    border: none;
+    padding: 0;
+    height: 39px;
+}
+.editor-file input:hover{
+    cursor: pointer;
+}
+.editor-file input:hover + .mark i{
+    background: url('../images/main/icon.png') no-repeat -37px -254px;
+}
+.editor-file input:hover + .mark{
+    color: #2c2c2c;
+}
+.editor-file .mark{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    line-height: 38px;
+    width: 100px;
+    color: #dbdbdb;
+    box-sizing: border-box;
+}
+.editor-file .mark i{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    transform: translateY(5px);
+    background: url("../images/main/icon.png") no-repeat 0px -254px;
+}
+.editor-file .file-list{
+    float: right;
+    min-height: 50px;
+    width: 85%;
+    /* background: gray; */
+}
+.editor-file .file-list table{
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+}
+.editor-file .file-list table tr textarea{
+    width: 150px;
+    height: 30px;
+    min-width: 150px;
+    min-height: 30px;
+    max-width: 150px;
+    max-height:30px;
+    margin-top: 5px;
+}
+.editor-file .file-list table tr td{
+    padding: 0;
+    line-height: 30px;
+    vertical-align: middle;
+}
+.editor-file .file-list table tr .btn:hover{
+    color: #32B16C;
+    cursor: pointer;
+}
+.editor-file .file-list table tr #preview img{
+    width: 50px;
+}
+/* 发布作业的弹出层样式 */
+#windowsubissue .layui-form-label{
+    width: 110px;
+}
+#windowsubissue .layui-form-item .layui-input-inline{
+    width: 320px;
+}
+#windowsubissue form{
+    margin-top: 20px;
+}
+
+/* 添加课程表单样式 */
+.add-course-form .cover-class-uploader .el-upload {
+    width: 100%;
+}
+.add-course-form .el-form {
+    width: 90%;
+    margin: 50px auto 20px;
+}
+.add-course-form .el-form .el-form-item__content{width: 60%;}
+.add-course-form .cover-class-uploader {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    box-sizing: border-box;
+    border: 1px dashed #d9d9d9;
+    border-radius: 4px;
+}
+.add-course-form .cover-class-uploader img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.add-course-form .cover-class-uploader:hover {
+    border-color: #409eff;
+    color: #409eff;
+}
+
+.show-img{
+    float: left;
+}
+.show-img a, #add-form .show-img a img{
+    display: block;
+    width: 60px;
+    height: 60px;
+}
+.blue-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    z-index: 99;
+    font-size: 1.4rem;
+}
+.my-file-upload {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    z-index: 100;
+}
+.file-btn .show {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #32b16c;
+    z-index:98;
+}
+#add-form .img > div > span{
+    margin-right: 20px;
+}
+#add-form .img > div > span i{
+    margin-left: -8px;
+    color: #32B16C;
+}
+#add-form .img > div.files{
+    height: 60px;
+    overflow: hidden;
+}
+#add-form .img > div.files p{
+    position: relative;
+    margin: 0;
+    font-size: 1.4rem;
+    height: 60px;
+}
+#add-form .img > div.files p canvas{
+    float: left;
+}
+#add-form .img > div.files p span{
+    display: block;
+    margin-left: 70px;
+    line-height: 30px;
+}
+#add-form .img > div.files p i.close{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    display: none;
+    left: 40px;
+    bottom: 0;
+    color: #fff;
+    background: rgba(125,125,125,.5);
+    line-height: 20px;
+    text-align: center;
+    z-index: 99;
+    cursor: pointer;
+}
+#add-form .img > div.files p:hover i.close{
+    display: block;
+}
+#add-form .img > div.files p span.text-danger{
+    color: #cc3366;
+}
+#add-form p input:focus{
+    border-color: #32B16C;
+}
+#add-form p input[type="file"]{
+    border: none;
+}
+#add-form p textarea{
+    float: left;
+    width: 300px;
+    min-height: 100px;
+    max-width: 300px;
+    max-height: 100px;
+    outline: none;
+    border: 1px solid #4d4d4d;
+    font-size: 1.4rem;
+    transition: all .3s;
+}
+#add-form p textarea:focus{
+    border-color: #32B16C;
+}
+#add-form p.des{
+    position: relative;
+    height: auto;
+}
+#add-form p span, #add-form .img span, #add-form .elect-course span{
+    float: left;
+}
+#add-form p select{
+    width: 300px;
+    height: 36px;
+    outline: none;
+    border: 1px solid #4d4d4d;
+    font-size: 1.4rem;
+    transition: all .3s;
+}
+#add-form p.organization select{
+    width: auto;
+    border-right: none;
+}
+#add-form p.organization select:last-child{
+    border-right: 1px solid #4d4d4d;
+}
+#add-form .con{
+    float: left;
+}
+#add-form .select-course span{
+    margin-right: 20px;
+    float: left;
+}
+#add-form .select-course .drag-course{
+    height: 40px;
+    box-sizing: border-box;
+    width: 40%;
+    border: 1px solid #4d4d4d;
+}
+.add-course-form p select:focus{
+   border-color: #32B16C;
+}
+.add-course-form .submit{
+    font-size: 1.4rem;
+    margin: 30px 0;
+    padding: 0 100px;
+}
+.add-course-form .submit span{
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 8px;
+    background: #44446d;
+    color: #fff;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.add-course-form .submit span:hover{
+    background: #32b16a;
+}
+
+/* 小节文件上传 */
+
+#knobble-upfile .looking{
+    padding: 10px 0;
+    height: 50%;
+    width: 100%;
+}
+#knobble-upfile .up-wrap{
+    position: relative;
+    height: 60px;
+}
+#knobble-upfile .upfile-con{
+    position: absolute;
+    top: 30px;
+    left: 290px;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    z-index: 99;
+    overflow:hidden;
+}
+#knobble-upfile .upfile-con input{
+    opacity: 0.005;
+    width: 60px;
+    cursor: pointer;
+}
+#knobble-upfile .mark{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 60%;
+    background: white;
+    border: 1px solid black;
+    height: 25px;
+    z-index: 98;
+}
+#knobble-upfile .mark .up-progress{
+    height: 100%;
+    width: 0px;
+    background-color: #32B16C;
+}
+#knobble-upfile .mark .up-progress span{
+    float: right;
+    color: #ab4747;
+    width: 100%;
+    text-align: right;
+}
+#knobble-upfile .mark span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    line-height: 27px;
+}
+#knobble-upfile .read{
+    background: #44446d;
+    color: white;
+    height: 26px;
+    width: 60px;
+    font-size: 14px;
+    text-align:center;
+    line-height:25px;
+    position: absolute;
+    z-index: 98;
+    margin: 0 50px;
+    border-radius: 8px;
+    top: 31px;
+    left: 240px;
+    display: block;
+}
+/* 小节排序样式 */
+.container-sort {
+    width: 500px;
+    margin: 20px auto;
+}
+.container-sort .drag {
+    width: 100%;
+    float: left;
+    margin: 2px;
+}
+.container-sort .sortable{
+    width: 90%;
+    margin: 0 auto;
+}
+.container-sort ul li {
+    list-style: none;
+    border: 1px solid gray;
+    height: 40px;
+    line-height: 40px;
+}
+
+.container-sort .move {
+    width: 14%;
+    height: 100%;
+    background: #32B16C;
+    float: right;
+    cursor: move;
+}
+.msg {
+    display: inline-block;
+    width: 80%;
+    padding: 0 10px;
+}
+
+
+/* 机构弹窗 */
+.organization .currnt-jigou{
+    margin: 100px 0 20px;
+    line-height: 40px;
+}
+.organization .currnt-jigou p.jigou{
+    width: 80%
+}
+.organization .currnt-jigou input{
+    width: 70%;
+    height: 30px;
+    border: none;
+    text-indent: 10px;
+    outline: none;
+    background: rgb(215, 232, 238);
+    font-size: 12px;
+}
+.organization{
+    background: #fff;
+    margin: 20px auto;
+    width: 86%;
+}
+.organization h2{
+    font-size: 18px;
+    font-weight: normal;
+    margin: 10px 0 30px 0;
+}
+.organization .wrap{
+    margin-top: 20px;
+}
+.organization h2 span{
+   font-size: 24px;
+   font-weight: 500;
+}
+.organization .courseorganization,.organization .courseorganization option{
+    line-height: 35px;
+    height: 35px;
+    float: left;
+    border-right: none;
+    outline: none;
+}
+.organization .courseorganization:last-child{
+    border-right: 1px solid rgb(169, 169, 169);
+}

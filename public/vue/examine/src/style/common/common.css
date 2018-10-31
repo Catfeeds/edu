@@ -1,0 +1,87 @@
+/* 公共页样式 */
+body{
+    background: #fff;
+}
+.main{
+    width: 1200px;
+    margin: 0 auto;
+}
+#app{
+    height: 100vh;
+}
+/* top nav start */
+#nav{
+    color: #fff;
+    min-width: 1280px;
+}
+#nav .nav-center a{
+    color: #fff;
+}
+#nav .nav-center .top-status{
+    height: 30px;
+    line-height: 30px;
+    float: right;
+}
+#nav .nav-center .top-status span{
+    margin-left: 8px;
+    font-size: 1rem;
+}
+#nav .nav-center{
+    height: 30px;
+    line-height: 30px;
+    padding: 20px 0;
+    background:rgb(29, 29, 51);
+}
+#nav .nav-center .nav-location{
+    position: relative;
+    padding-left: 26px;
+    top: -12px;
+}
+#nav .nav-center .nav-location a,#nav .nav-center .nav-location a img{
+    display: block;
+}
+/* top nav end */
+
+.whiteboard{
+    height: 100px;
+    width: 100%;
+}
+
+/* cursorlist top-nav start */
+#index-content{
+    height: 100%;
+}
+#index-content .top-nav {
+    width: 940px;
+    height: 180px;
+    background: rgba(26, 26, 54, .5)
+}
+
+#index-content .top-nav .cont {
+    margin-right: 310px;
+    margin-top: 40px;
+    color: #fff;
+}
+
+#index-content .top-nav .cont .cont-big {
+    font-size: 2.5rem;
+}
+
+#index-content .top-nav span {
+    padding: 0px 5px;
+}
+
+#index-content .top-nav .cont .study {
+    margin-top: 35px;
+    display: inline-block;
+    margin: 40px 40px 0px 0px;
+}
+
+#index-content .top-nav .cont .course-data {
+    height: 70px;
+    text-align: left;
+    min-width: 600px;
+}
+
+
+/* cursorlist top-nav end */
